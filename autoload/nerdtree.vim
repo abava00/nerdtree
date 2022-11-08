@@ -148,7 +148,7 @@ function! nerdtree#deprecated(func, ...) abort
     endif
     if !has_key(s:deprecationWarnings, a:func)
         let s:deprecationWarnings[a:func] = 1
-        echomsg msg
+        "echomsg msg
     endif
 endfunction
 
@@ -218,7 +218,7 @@ endfunction
 "msg: the message to echo
 function! nerdtree#echo(msg) abort
     redraw
-    echomsg empty(a:msg) ? '' : ('NERDTree: ' . a:msg)
+    " echomsg empty(a:msg) ? '' : ('NERDTree: ' . a:msg)
 endfunction
 
 "FUNCTION: nerdtree#echoError {{{2
